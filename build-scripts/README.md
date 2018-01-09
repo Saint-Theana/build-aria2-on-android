@@ -35,6 +35,12 @@ example:
 ```
 And you need to place ca-certificates.crt under path /sdcard,or it would not work.
 
+After configuration,use folowing command to build aria2:
+```shell
+export ANDROID_HOME=/data/data/io.neoterm/files/home/Arm-Ndk-Toolchain-aarch64-android-26/
+./android-make
+```
+
 
 
 
