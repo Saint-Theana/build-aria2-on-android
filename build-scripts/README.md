@@ -21,8 +21,20 @@ cd aria2-1.33.1
 
 Last thing you should note:
 While downloading a HTTPS_URL Aria2c will check certificate from host,it will fail if aria2c couldn't get local ca-certificate.crt
-One way is to use --check-certificate=false to turn down check certificate.like:
+One way is to use --check-certificate=false to turn down check certificate.For example:
 ```shell
 aria2c --check-certificate=false https://.......
 ```
+
+Another way is let aria2c can get local ca-certificate.crt.
+It requires add opinion --with-ca-bundle=PATH/ca-certificates.crt while configuration of aria2 and ca-certificates.crt must be placed in correct path in you Android Phone.
+
+example: ./configure --with-ca-bundle='/sdcard/ca-certificates.crt' 
+And you need to place ca-certificates.crt under path /sdcard,or it would not work.
+
+
+
+
+
+
 
