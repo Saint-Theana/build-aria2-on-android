@@ -29,7 +29,10 @@ aria2c --check-certificate=false https://.......
 Another way is let aria2c can get local ca-certificate.crt.
 It requires add opinion --with-ca-bundle=PATH/ca-certificates.crt while configuration of aria2 and ca-certificates.crt must be placed in correct path in you Android Phone.
 
-example: ./configure --with-ca-bundle='/sdcard/ca-certificates.crt' 
+example:
+```shell
+./configure --with-ca-bundle='/sdcard/ca-certificates.crt' 
+```
 And you need to place ca-certificates.crt under path /sdcard,or it would not work.
 
 
