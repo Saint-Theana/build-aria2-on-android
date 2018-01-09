@@ -19,3 +19,10 @@ tar xvf aria2-1.33.1.tar.gz
 cd aria2-1.33.1
 ```
 
+Last thing you should note:
+While downloading a HTTPS_URL Aria2c will check certificate from host,it will fail if aria2c couldn't get local ca-certificate.crt
+One way is to use --check-certificate=false to turn down check certificate.like:
+```shell
+aria2c --check-certificate=false https://.......
+```
+
