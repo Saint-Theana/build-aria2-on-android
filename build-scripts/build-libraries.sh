@@ -1,6 +1,8 @@
 #!/data/data/io.neoterm/files/usr/bin/bash
 
-cd 
+apt install git -y
+
+cd
 
 git clone git://github.com/Saint-Theana/Arm-Ndk-Toolchain-aarch64-android-26.git
 
