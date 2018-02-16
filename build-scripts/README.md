@@ -14,8 +14,10 @@ https://raw.githubusercontent.com/Saint-Theana/build-aria2-on-android/master/Fil
 Do not use official source file,you will fail in that case.
 
 ```shell
+cd
 wget https://raw.githubusercontent.com/Saint-Theana/build-aria2-on-android/master/Files/aria2-1.33.1.tar.gz
-tar xvf aria2-1.33.1.tar.gz
+mkdir aria2-1.33.1
+tar xvf aria2-1.33.1.tar.gz -C ./aria2-1.33.1
 cd aria2-1.33.1
 ```
 
