@@ -2,6 +2,8 @@
 
 apt install git -y
 
+apt install make -y
+
 cd
 
 git clone git://github.com/Saint-Theana/Arm-Ndk-Toolchain-aarch64-android-26.git
