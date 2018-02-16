@@ -21,7 +21,7 @@ LIBSSH2=https://raw.githubusercontent.com/Saint-Theana/build-aria2-on-android/ma
 ARIA2=https://raw.githubusercontent.com/Saint-Theana/build-aria2-on-android/master/Files/aria2-1.33.1.tar.gz
 
 
-apt install wget tar pkg-config -y
+apt install wget tar pkg-config perl -y
 
 cd 
 wget $ZLIB
