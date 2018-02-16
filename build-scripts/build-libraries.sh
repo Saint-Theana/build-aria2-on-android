@@ -35,7 +35,7 @@ cd
 wget $EXPAT
 tar jxvf expat-2.2.0.tar.bz2
 cd expat*0
-SHELL=/data/data/io.neoterm/files/usr/bin/bash PKG_CONFIG_PATH=$ANDROID_HOME/usr/local/lib/pkgconfig/ LD_LIBRARY_PATH=$ANDROID_HOME/usr/local/lib/:$LD_LIBRARY_PATH CC=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-gcc CXX=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-g++ ./configure --host=aarch64-linux-android --prefix=$ANDROID_HOME/usr/local --enable-static=yes --enable-shared=no
+SHELL=/data/data/io.neoterm/files/usr/bin/bash PKG_CONFIG_PATH=$ANDROID_HOME/usr/local/lib/pkgconfig/ LD_LIBRARY_PATH=$ANDROID_HOME/usr/local/lib/:$LD_LIBRARY_PATH CC=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-gcc CXX=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-g++ AR=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-ar ./configure --host=aarch64-linux-android --prefix=$ANDROID_HOME/usr/local --enable-static=yes --enable-shared=no
   make
   make install
 
