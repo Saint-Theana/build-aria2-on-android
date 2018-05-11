@@ -8,7 +8,7 @@ cd
 
 git clone git://github.com/Saint-Theana/Arm-Ndk-Toolchain-aarch64-android-26.git
 
-export ANDROID_HOME=/data/data/io.neoterm/files/home/Arm-Ndk-Toolchain-aarch64-android-26/
+export ANDROID_HOME=/data/data/io.neoterm/files/home/Arm-Ndk-Toolchain-aarch64-android-26
 
 mkdir -p Arm-Ndk-Toolchain-aarch64-android-26/usr/local/lib/pkgconfig
 
@@ -72,7 +72,7 @@ tar zxvf libssh2-1.8.1_dev.tar.gz
   apt install libtool autoconf automake -y
   chmod 700 ./buildconf
   ./buildconf
-  PKG_CONFIG_PATH=$ANDROID_HOME/usr/local/lib/pkgconfig/ LD_LIBRARY_PATH=$ANDROID_HOME/usr/local/lib/:$LD_LIBRARY_PATH CC=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-gcc CXX=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-g++ AR=aarch64-linux-android-ar RANLIB=aarch64-linux-android-ranlib CPPFLAGS="-I$ANDROID_HOME/usr/local/usr/local/include" LDFLAGS="-L$ANDROID_HOME/usr/local/usr/local/lib" ./configure --prefix="$ANDROID_HOME/usr/local/usr/local/" --with-libssl-prefix=$ANDROID_HOME/usr/local/ --host=aarch64-linux-android
+  PKG_CONFIG_PATH=$ANDROID_HOME/usr/local/lib/pkgconfig/ LD_LIBRARY_PATH=$ANDROID_HOME/usr/local/lib/:$LD_LIBRARY_PATH CC=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-gcc CXX=$ANDROID_HOME/toolchain/bin/aarch64-linux-android-g++ AR=aarch64-linux-android-ar RANLIB=aarch64-linux-android-ranlib CPPFLAGS="-I$ANDROID_HOME/usr/local/include" LDFLAGS="-L$ANDROID_HOME/usr/local/lib" ./configure --prefix="$ANDROID_HOME/usr/local/" --with-libssl-prefix=$ANDROID_HOME/usr/local/ --host=aarch64-linux-android
   make 
   make install
   
