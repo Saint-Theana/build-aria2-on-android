@@ -52,7 +52,7 @@ BUILD_DIRECTORY=/data/data/io.neoterm/files/usr/tmp
 cd $BUILD_DIRECTORY
 #
  # zlib build
- # $DOWNLOADER $ZLIB
+ $DOWNLOADER $ZLIB
   tar zxvf zlib-1.2.11.tar.gz
   cd zlib-1.2.11/
   PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig/ LD_LIBRARY_PATH=$PREFIX/lib/ CC=$HOST-gcc STRIP=$HOST-strip RANLIB=$HOST-ranlib CXX=$HOST-g++ AR=$HOST-ar LD=$HOST-ld a ./configure --prefix=$PREFIX  --static
