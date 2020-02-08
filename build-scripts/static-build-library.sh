@@ -35,7 +35,7 @@ HOST="aarch64-linux-android"
 PREFIX="/data/data/io.neoterm/files/home/opt/aria2-arm-android/build_libs"
 LOCAL_DIR="/data/data/io.neoterm/files/home/opt/aria2-arm-android/build_libs"
 
-TOOL_BIN_DIR="/data/data/io.neoterm/files/home/NDK/aarch64-linux-android-4.9/prebuilt/linux-arm64/bin"
+TOOL_BIN_DIR="/data/data/io.neoterm/files/home/NDK/bin"
 PATH=${TOOL_BIN_DIR}:$PATH
 
 DEST="/data/data/io.neoterm/files/home/opt/aria2-arm-android/build_libs"
